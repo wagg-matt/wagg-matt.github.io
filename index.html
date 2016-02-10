@@ -4,8 +4,21 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Prose.io demo</title>
+		<style>
+			body {
+				background: url("i/1.jpg") 0 0 no-repeat transparent;
+				background-size: cover;
+				-webkit-filter: blur(2px);
+				filter: blur(2px);
+			}
+			.copy {
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		</style>
 	</head>
 	<body>
-		<p>Body copy for testing</p>
+		<p class="copy">Body copy for testing</p>
 	</body>
 </html>
