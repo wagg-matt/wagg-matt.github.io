@@ -6,19 +6,20 @@
 		<title>Prose.io demo</title>
 		<style>
 			body {
-				background: url("i/1.jpg") 0 0 no-repeat transparent;
 				background-size: cover;
 				-webkit-filter: blur(2px);
 				filter: blur(2px);
+				position: relative;
 			}
 			.copy {
-				position: relative;
+				position: absolute;
 				top: 50%;
 				transform: translateY(-50%);
 			}
 		</style>
 	</head>
 	<body>
+		<p class="image"><img src="i/1.jpg" /></p>
 		<p class="copy">Body copy for testing</p>
 	</body>
 </html>
