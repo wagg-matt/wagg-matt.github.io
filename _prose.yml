@@ -1,0 +1,6 @@
+prose:
+  rooturl: ''
+  siteurl: 'http://wagg-matt.github.io/'
+  ignore:
+    - README.md
+  
