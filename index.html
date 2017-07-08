@@ -3,51 +3,16 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Prose.io demo</title>
+		<title>Sweet Chorlton Couture Cakes</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<style>
-			body {
-				margin: 0;
-				padding: 0;
-			}
-			.youtube-wrap {
-				display: block;
-				margin: 80px auto;
-				width: 640px;
-			}
-			.youtube-video {
-				height: 480px;
-				width: 640px;
-			}
+			body{font-family:"Century Gothic",CenturyGothic,Geneva,AppleGothic,sans-serif;margin:0;padding:20px;text-align:center}@media (min-width:768px){body{padding:40px}}.facebook i,.instagram i{display:inline-block;font-size:50px;padding-right:12px}a{-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:#959595;display:-webkit-box;display:-ms-flexbox;display:flex;font-size:calc(1.5em + 1vw);-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding-bottom:16px;text-decoration:none}h1{margin-top:0}img{height:auto;max-width:500px;width:100%}h3{font-size:30px;font-weight:400;text-transform:uppercase}
 		</style>
 	</head>
 	<body>
-		<div class="youtube-wrap">
-			<div class="youtube-video" id="YhzIy-6lKyU" data-params="modestbranding=1&showinfo=0&controls=0&vq=hd720"></div>
-		</div>
-		<script src="https://cdn.jsdelivr.net/jquery/2.1.4/jquery.min.js"></script>
-		<script>
-			"use strict";
-			$(function() {
-		    $(".youtube-video").each(function() {
-	        // Based on the YouTube ID, we can easily find the thumbnail image
-	        $(this).css('background-image', 'url(http://i.ytimg.com/vi/' + this.id + '/sddefault.jpg)');
-	    
-	        // Overlay the Play icon to make it look like a video player
-	        $(this).append($('<div/>', {'class': 'play'}));
-	    
-	        $(document).delegate('#'+this.id, 'click', function() {
-            // Create an iFrame with autoplay set to true
-            var iframe_url = "https://www.youtube.com/embed/" + this.id + "?autoplay=1&autohide=1";
-            if ($(this).data('params')) iframe_url+='&'+$(this).data('params');
-    
-            // The height and width of the iFrame should be the same as parent
-            var iframe = $('<iframe/>', {'frameborder': '0', 'src': iframe_url, 'width': $(this).width(), 'height': $(this).height() })
-    
-            // Replace the YouTube thumbnail with YouTube HTML5 Player
-            $(this).replaceWith(iframe);
-	        });
-		    });
-			 });
-		</script>
+		<h1><img src="i/sweet-chorlton-couture-cakes.jpg" height="490" width="500" /></h1>
+		<h3>Watch this space while you're waiting...</h3>
+		<a class="instagram" href="http://instagram.com/SweetChorlton"><i class="fa fa-instagram"></i> @ Sweetchorlton</a>
+		<a class="facebook" href="http://Facebook.com/SweetChorlton"><i class="fa fa-facebook"></i> @ Sweetchorlton</a>
 	</body>
 </html>
